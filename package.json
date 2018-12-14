@@ -1,0 +1,23 @@
+{
+  "name": "dockerfiles",
+  "version": "0.0.1",
+  "description": "Dockerfiles for GUI applications",
+  "main": "index.js",
+  "scripts": {
+    "xhost": "open -a XQuartz; sleep 3; xhost + $(ifconfig en0 | grep 'inet ' | awk '{print $2}')",
+    "docker": "npm run xhost & docker run --rm -it -e DISPLAY=$(ifconfig en0 | grep 'inet ' | awk '{print $2}'):0.0 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliustaoglu/Dockerfiles.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Cuneyt Aliustaoglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliustaoglu/Dockerfiles/issues"
+  },
+  "homepage": "https://github.com/aliustaoglu/Dockerfiles#readme"
+}
