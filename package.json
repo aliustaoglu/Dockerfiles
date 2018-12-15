@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "xhost": "open -a XQuartz; sleep 3; xhost + $(ifconfig en0 | grep 'inet ' | awk '{print $2}')",
-    "docker": "npm run xhost & docker run --rm -it -e DISPLAY=$(ifconfig en0 | grep 'inet ' | awk '{print $2}'):0.0 "
+    "docker": "npm run xhost & docker run --rm -it -e DISPLAY=$(ifconfig en0 | grep 'inet ' | awk '{print $2}'):0.0 ",
+    "ubuntu": "docker run --rm -it aliustaoglu/ubuntu /bin/bash"
   },
   "repository": {
     "type": "git",
