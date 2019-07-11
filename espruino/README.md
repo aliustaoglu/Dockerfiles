@@ -26,11 +26,11 @@ docker-machine stop
 
 And open VirtualBox and find your image (named default)
 
-![VirtualBox](https://raw.githubusercontent.com/Dockerfiles/espruino-create-project/master/espruino/pics/usbdevice.gif)
+![VirtualBox](https://raw.githubusercontent.com/Dockerfiles/espruino-create-project/master/master/espruino/pics/virtualbox.png)
 
 And make USB device available from the virtual machine
 
-![USBDevice](https://raw.githubusercontent.com/Dockerfiles/espruino-create-project/master/espruino/pics/usbdevice.gif)
+![VirtualBox](https://raw.githubusercontent.com/Dockerfiles/espruino-create-project/master/master/espruino/pics/usbdevice.png)
 
 Inside the image it will be something like this. And this name is important.
 
